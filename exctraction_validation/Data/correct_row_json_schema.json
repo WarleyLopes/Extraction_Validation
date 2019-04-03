@@ -1,0 +1,239 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "url",
+    "title",
+    "unit_price",
+    "stock_count",
+    "overview",
+    "information",
+    "manufacturer",
+    "manufacturer_part",
+    "origin_country",
+    "associated_parts",
+    "files",
+    "file_urls",
+    "image_urls",
+    "trail",
+    "primary_image_url",
+    "_type"
+  ],
+  "properties": {
+    "url": {
+      "$id": "#/properties/url",
+      "type": "string",
+      "title": "The Url Schema",
+      "default": "",
+      "examples": [
+        "http://uk.farnell.com/pro-elec/9988s-5m/extension-lead-4way-surge-5m/dp/1286494"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "title": {
+      "$id": "#/properties/title",
+      "type": "string",
+      "title": "The Title Schema",
+      "default": "",
+      "examples": [
+        "9988S-5M PRO ELEC, 4 Gang Surge Protected Extension Lead, White 5m"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "unit_price": {
+      "$id": "#/properties/unit_price",
+      "type": "integer",
+      "title": "The Unit_price Schema",
+      "default": 0,
+      "examples": [
+        898
+      ]
+    },
+    "stock_count": {
+      "$id": "#/properties/stock_count",
+      "type": "integer",
+      "title": "The Stock_count Schema",
+      "default": 0,
+      "examples": [
+        409
+      ]
+    },
+    "overview": {
+      "$id": "#/properties/overview",
+      "type": "string",
+      "title": "The Overview Schema",
+      "default": "",
+      "examples": [
+        "Surge protected extension lead with integral neon indicator. Rated at 13A and conforms to BS 1363/A."
+      ],
+      "pattern": "^(.*)$"
+    },
+    "information": {
+      "$id": "#/properties/information",
+      "type": "array",
+      "title": "The Information Schema",
+      "items": {
+        "$id": "#/properties/information/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "name",
+          "value"
+        ],
+        "properties": {
+          "name": {
+            "$id": "#/properties/information/items/properties/name",
+            "type": "string",
+            "title": "The Name Schema",
+            "default": "",
+            "examples": [
+              "No. of Outlets:"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "value": {
+            "$id": "#/properties/information/items/properties/value",
+            "type": "string",
+            "title": "The Value Schema",
+            "default": "",
+            "examples": [
+              "4Outlets"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    },
+    "manufacturer": {
+      "$id": "#/properties/manufacturer",
+      "type": "string",
+      "title": "The Manufacturer Schema",
+      "default": "",
+      "examples": [
+        "PRO ELEC"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "manufacturer_part": {
+      "$id": "#/properties/manufacturer_part",
+      "type": "string",
+      "title": "The Manufacturer_part Schema",
+      "default": "",
+      "examples": [
+        "9988S-5M"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "origin_country": {
+      "$id": "#/properties/origin_country",
+      "type": "string",
+      "title": "The Origin_country Schema",
+      "default": "",
+      "examples": [
+        "China"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "associated_parts": {
+      "$id": "#/properties/associated_parts",
+      "type": "array",
+      "title": "The Associated_parts Schema",
+      "items": {
+        "$id": "#/properties/associated_parts/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "9988S-2M",
+          "9988S-8M",
+          "1.500206"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "files": {
+      "$id": "#/properties/files",
+      "type": "array",
+      "title": "The Files Schema",
+      "items": {
+        "$id": "#/properties/files/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "(EN)"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "file_urls": {
+      "$id": "#/properties/file_urls",
+      "type": "array",
+      "title": "The File_urls Schema",
+      "items": {
+        "$id": "#/properties/file_urls/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "http://www.farnell.com/datasheets/1499649.pdf"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "image_urls": {
+      "$id": "#/properties/image_urls",
+      "type": "array",
+      "title": "The Image_urls Schema",
+      "items": {
+        "$id": "#/properties/image_urls/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "https://uk.farnell.com/productimages/standard/en_GB/PL11232-40.jpg"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "trail": {
+      "$id": "#/properties/trail",
+      "type": "array",
+      "title": "The Trail Schema",
+      "items": {
+        "$id": "#/properties/trail/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "Electrical",
+          "Power Outlet Strips - with Surge Protection"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "primary_image_url": {
+      "$id": "#/properties/primary_image_url",
+      "type": "string",
+      "title": "The Primary_image_url Schema",
+      "default": "",
+      "examples": [
+        "http://uk.farnell.com/productimages/large/en_GB/PL11232-40.jpg"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "_type": {
+      "$id": "#/properties/_type",
+      "type": "string",
+      "title": "The _type Schema",
+      "default": "",
+      "examples": [
+        "FarnellItem"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}

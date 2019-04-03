@@ -1,6 +1,3 @@
-# Extraction_Validation
-Validate extracted data from Scrapy based on a correct row of example from an exported json of the data
-
 1-Get the extracted data file you want to validate in json format;
 
 2-Rename it to exctracted_data.json;
@@ -19,8 +16,10 @@ Validate extracted data from Scrapy based on a correct row of example from an ex
 
 9-Open up exctraction_validation.sln file to open the project;
 
-10-Build the project;
+10-On the Solution Explorer window, right click the solution and click on Restore NuGet packages;
 
-11-Open Test Explorer (CTRL+E,T) or Test->Windows->Test Explorer, run the test;
+11-Build the project;
 
-12-Check out the results in root folder of the project through the file index.html;
+12-Open Test Explorer (CTRL+E,T) or Test->Windows->Test Explorer, run the test;
+
+13-Check out the results in root folder of the project through the file index.html.
